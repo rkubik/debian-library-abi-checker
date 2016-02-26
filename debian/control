@@ -1,0 +1,27 @@
+Source: foo
+Priority: extra
+Maintainer: Russ Kubik <russkubik@gmail.com>
+Build-Depends: debhelper (>= 7.0.0), cmake, dh-acc
+Standards-Version: 3.9.3
+Section: libs
+
+Package: libfoo0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Library for foo C++
+ Installs the foo C++ library
+
+Package: libfoo-dev
+Section: libdevel
+Architecture: any
+Depends: libfoo0 (= ${binary:Version}), ${misc:Depends}
+Description: Dev package for libfoo0
+ Installs the development resources for libfoo0
+
+Package: libfoo0-dbg
+Section: debug
+Architecture: any
+Depends: libfoo0 (= ${binary:Version}), ${misc:Depends}
+Description: Debugging symbols for libfoo0
+ Installs the dubugging symbols for libfoo0

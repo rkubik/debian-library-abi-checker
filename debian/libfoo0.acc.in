@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<descriptor>
+
+<version>
+    ${VERSION_FULL}
+</version>
+
+<headers>
+    include/${CMAKE_PROJECT_NAME}/
+</headers>
+
+<libs>
+    ${PROJECT_BINARY_DIR}/lib/lib${CMAKE_PROJECT_NAME}.so
+</libs>
+
+</descriptor>
