@@ -1,4 +1,4 @@
-# foo
+# Debian Library ABI Checker
 
 ## What is this
 
